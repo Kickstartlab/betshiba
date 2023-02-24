@@ -1,0 +1,21 @@
+.text-outline {
+  -webkit-text-stroke: 1px #FFA409;
+  letter-spacing: .3em;
+}
+
+.bg-gradient {
+  background: linear-gradient(90deg, #3DBFBB 0%, #8635BD 100%);
+}
+
+.bg-dark-top {
+  background: linear-gradient(180deg, #140D23 0%, rgba(20, 13, 35, 0) 100%);
+}
+
+.border-gradient {
+  border-image: linear-gradient(90deg, #3DBFBB 0%, #8635BD 100%);
+  border-image-slice: 1;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 2px;
+  box-sizing: initial;
+}

@@ -26,7 +26,8 @@ export default function Home() {
         Aos.init({
             duration: 3000,
             once: false,
-            easing: 'ease'
+            easing: 'ease',
+            delay: 350
         });
         Aos.refresh();
     }, [])

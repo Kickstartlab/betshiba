@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from './Footer'
 import Menu from './Menu'
 import play_1 from '../assets/play_1.png';
@@ -16,10 +16,20 @@ import top from '../assets/top.png';
 import banner_2 from '../assets/banner_2.png';
 import banner_1 from '../assets/banner_1.png';
 import Accordion from './Accordion';
-
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 
 export default function Home() {
+
+    useEffect(() => {
+        Aos.init({
+            duration: 3000,
+            once: false,
+            easing: 'ease'
+        });
+        Aos.refresh();
+    }, [])
 
     const accordionData = [
         {
@@ -45,7 +55,7 @@ export default function Home() {
     ];
 
     return (
-        <div className="bg-blue-100 font-inter">
+        <div className="bg-blue-100 font-inter overflow-hidden">
 
             {/* top section */}
 
@@ -54,7 +64,7 @@ export default function Home() {
 
                     <Menu />
                     <div className="lg:flex block justify-between items-center gap-x-12 py-12">
-                        <div className="lg:w-1/2 w-full">
+                        <div data-aos="fade-right" data-aos-delay="350" className="lg:w-1/2 w-full">
                             <h2 className='md:text-7xl text-3xl tracking-wider font-russo font-bold text-white-100'>
                                 BET
                             </h2>
@@ -68,13 +78,13 @@ export default function Home() {
                             <p className='pt-6 pb-4 text-white-50 font-inter'>$Bshiba is an Ethereum Based project developing a completely Decentralized blockchain gambling game. All transactions are done on the blockchain so there are no hidden fees or odds.</p>
 
                             <div className="flex items-center gap-8 font-russo">
-                                <a href="">
+                                <a href="/">
                                     <button className="text-white-100 bg-gradient py-2 lg:px-8 px-4 rounded-sm font-semibold mt-5 uppercase tracking-widest">
                                         Play the game
                                     </button>
                                 </a>
 
-                                <a href="">
+                                <a href="/">
                                     <button className="text-white-100 font-inter border-2 border-white-100 py-2 lg:px-8 px-4 font-semibold mt-5 uppercase tracking-widest">
                                         White paper
                                     </button>
@@ -83,7 +93,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className="img md:mt-0 mt-12">
+                        <div  data-aos="zoom-in" data-aos-delay="350" className="img md:mt-0 mt-12">
                             <img src={top} alt="Logo" className='w-10/12 lg:float-right sm:flex mx-auto' />
                         </div>
                     </div>
@@ -99,11 +109,11 @@ export default function Home() {
                     <div className="lg:flex block justify-between items-center gap-x-12 py-12">
 
 
-                        <div className="img">
+                        <div data-aos="zoom-in" data-aos-delay="350" className="img">
                             <img src={about} alt="Logo" className='w-10/12 lg:float-right sm:flex mx-auto' />
                         </div>
 
-                        <div className="lg:w-1/2 w-full md:mt-0 mt-12">
+                        <div  data-aos="fade-left" className="lg:w-1/2 w-full md:mt-0 mt-12">
                             <h3 className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
                                 About us
                             </h3>
@@ -132,17 +142,17 @@ export default function Home() {
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
 
-                    <div className='lg:w-10/12 text-center flex flex-col mx-auto'>
+                    <div data-aos="fade-up" data-aos-delay="350" className='lg:w-10/12 text-center flex flex-col mx-auto'>
 
-                        <h3 className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
+                        <h3 data-aos="slide-down" className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
                             Achievement
                         </h3>
 
-                        <div className='absolute right-20 -mt-52 lg:block hidden'>
+                        <div data-aos="zoom-in" data-aos-delay="350" className='absolute right-20 -mt-52 lg:block hidden'>
                             <img src={star} alt="Logo" className='w-10/12' />
                         </div>
 
-                        <p className='md:text-3xl text-2xl tracking-wider font-russo text-center font-semibold text-white-100 uppercase'>
+                        <p data-aos="slide-up" className='md:text-3xl text-2xl tracking-wider font-russo text-center font-semibold text-white-100 uppercase'>
                             2021 cemented Rocket Gambling Game as one of the
                             most beloved money games, according to 1win and 1xbet casinos.
                         </p>
@@ -159,11 +169,11 @@ export default function Home() {
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
 
-                    <div className='absolute left-5 lg:block hidden'>
+                    <div data-aos="fade-right" data-aos-delay="350" className='absolute left-5 lg:block hidden'>
                         <img src={coin} alt="Logo" className='w-10/12' />
                     </div>
 
-                    <div className='lg:w-8/12 text-center flex flex-col mx-auto'>
+                    <div  data-aos="zoom-in" data-aos-delay="350" className='lg:w-8/12 text-center flex flex-col mx-auto'>
 
                         <h3 className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
                             BetSHIBA ROCKET
@@ -195,7 +205,7 @@ export default function Home() {
 
                     <div className="lg:flex block justify-center items-center gap-x-12 py-12">
 
-                        <div className="lg:w-1/2 w-full">
+                        <div data-aos="slide-right" className="lg:w-1/2 w-full">
 
                             <h2 className='md:text-4xl text-3xl tracking-wider font-russo font-semibold text-white-100 uppercase'>
                                 How to Place Your Bet
@@ -206,7 +216,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className="img">
+                        <div data-aos="zoom-in" data-aos-delay="350" className="img">
                             <img src={bet} alt="Logo" className='w-10/12 lg:float-right' />
                         </div>
 
@@ -217,7 +227,7 @@ export default function Home() {
 
             {/* banner_1 */}
 
-            <div className="banner">
+            <div data-aos="flip-up" data-aos-delay="350" className="banner">
                 <img src={banner_1} alt="Logo" className='' />
             </div>
 
@@ -227,7 +237,7 @@ export default function Home() {
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
 
-                    <div className='lg:w-8/12 text-center flex flex-col mx-auto'>
+                    <div  data-aos="fade-up" data-aos-delay="350" className='lg:w-8/12 text-center flex flex-col mx-auto'>
 
                         <h3 className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
                             BetSHIBA ROCKET
@@ -245,7 +255,7 @@ export default function Home() {
 
                     <div className='grid lg:grid-cols-2 grid-cols-1 grid-rows-2 items-center justify-center gap-6 mt-12 mb-6'>
 
-                        <div className='rounded-3xl p-8 bg-white-100 lg:flex items-center gap-4 space-y-5'>
+                        <div  data-aos="flip-left" className='rounded-3xl p-8 bg-white-100 lg:flex items-center gap-4 space-y-5'>
 
                             <div className='lg:w-1/3'>
                                 <img src={play_1} alt="Logo" className='' />
@@ -264,7 +274,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
+                        <div data-aos="flip-right" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
 
                             <div className='lg:w-1/3'>
                                 <img src={play_2} alt="Logo" className='' />
@@ -281,7 +291,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
+                        <div  data-aos="flip-left" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
 
                             <div className='lg:w-1/3'>
                                 <img src={play_3} alt="Logo" className='' />
@@ -298,7 +308,7 @@ export default function Home() {
 
                         </div>
 
-                        <div className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
+                        <div data-aos="flip-right" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
 
                             <div className='lg:w-1/3'>
                                 <img src={play_4} alt="Logo" className='' />
@@ -319,7 +329,7 @@ export default function Home() {
 
                     <div className='flex items-center justify-center mb-6'>
 
-                        <div className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5 lg:w-1/2'>
+                        <div data-aos="zoom-in" data-aos-delay="350" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5 lg:w-1/2'>
 
                             <div className='lg:w-1/3'>
                                 <img src={play_5} alt="Logo" className='' />
@@ -351,11 +361,11 @@ export default function Home() {
                     <div className="lg:flex block justify-center items-center gap-x-12 py-12">
 
 
-                        <div className="img">
+                        <div data-aos="zoom-in" data-aos-delay="350" className="img">
                             <img src={mbl} alt="Logo" className='w-10/12 lg:float-right sm:flex mx-auto' />
                         </div>
 
-                        <div className="lg:w-1/2 w-full md:mt-0 mt-12 lg:text-right">
+                        <div data-aos="slide-left" className="lg:w-1/2 w-full md:mt-0 mt-12 lg:text-right">
                             <h3 className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
                                 BetSHIBA ROCKET
                             </h3>
@@ -377,13 +387,13 @@ export default function Home() {
 
             {/* banner_2 */}
 
-            <div className="banner">
+            <div data-aos="flip-up" data-aos-delay="350" className="banner">
                 <img src={banner_2} alt="Logo" className='' />
             </div>
 
             {/* BetSHIBA ROCKET */}
 
-            <div id='conclusion' className="">
+            <div data-aos="zoom-in" data-aos-delay="350" id='conclusion' className="">
 
                 <div className="lg:py-20 py-8 lg:px-20 px-5 container mx-auto">
 
@@ -414,11 +424,11 @@ export default function Home() {
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
 
-                    <div className='absolute left-0 -mt-24 lg:block hidden'>
+                    <div data-aos="fade-right" data-aos-delay="350" className='absolute left-0 -mt-24 lg:block hidden'>
                         <img src={rocket} alt="Logo" className='w-10/12' />
                     </div>
 
-                    <div className='lg:w-8/12 text-center flex flex-col mx-auto'>
+                    <div data-aos="fade-up" data-aos-delay="350" className='lg:w-8/12 text-center flex flex-col mx-auto'>
 
                         <h3 className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
                             Questions
@@ -428,7 +438,7 @@ export default function Home() {
                             FAq
                         </h2>
 
-                        <div className="accordion space-y-5 py-12">
+                        <div data-aos="zoom-in" data-aos-delay="350" className="accordion space-y-5 py-12">
                             {accordionData.map(({ numbers, title, content }) => (
                                 <Accordion title={title} content={content} numbers={numbers} />
                             ))}

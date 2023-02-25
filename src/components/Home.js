@@ -68,10 +68,10 @@ export default function Home() {
                             <h2 className='md:text-7xl text-3xl tracking-wider font-russo font-bold text-white-100'>
                                 BET
                             </h2>
-                            <h2 className='md:text-7xl text-3xl text-outline font-russo font-bold'>
+                            <h2 className='md:text-7xl text-3xl tracking-wide text-outline font-russo font-bold'>
                                 SHIBA
                             </h2>
-                            <h2 className='md:text-5xl text-3xl tracking-wider font-russo font-bold text-white-100 uppercase'>
+                            <h2 className='md:text-5xl text-3xl tracking-wide font-russo font-bold text-white-100 uppercase'>
                                 built on Ethereum
                             </h2>
 
@@ -79,13 +79,13 @@ export default function Home() {
 
                             <div className="flex items-center gap-8 font-russo">
                                 <a href="/">
-                                    <button className="text-white-100 bg-gradient py-2 lg:px-8 px-4 rounded-sm font-semibold mt-5 uppercase tracking-widest">
+                                    <button className="text-white-100 bg-gradient py-3 md:px-8 px-3 rounded-sm font-semibold mt-5 uppercase tracking-widest text-sm">
                                         Play the game
                                     </button>
                                 </a>
 
                                 <a href="/">
-                                    <button className="text-white-100 font-inter border-2 border-white-100 py-2 lg:px-8 px-4 font-semibold mt-5 uppercase tracking-widest">
+                                    <button className="text-white-100 font-russo font-semibold border-2 border-white-100 py-2 md:px-8 px-3 mt-5 uppercase tracking-widest text-sm">
                                         White paper
                                     </button>
                                 </a>

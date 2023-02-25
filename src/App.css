@@ -1,6 +1,5 @@
 .text-outline {
-  -webkit-text-stroke: 1px #FFA409;
-  letter-spacing: .3em;
+  -webkit-text-stroke: 0.5px #FFA409;
 }
 
 .bg-gradient {

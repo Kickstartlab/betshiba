@@ -1,4 +1,7 @@
 import React from 'react'
+import telegram from '../assets/telegram.png';
+import twitter from '../assets/twitter.png';
+
 
 
 export default function Footer() {
@@ -23,6 +26,21 @@ export default function Footer() {
             <p className='text-white-50 lg:w-9/12 font-inter'>
               We are always open and we welcome and questions you have for our team. If you wish to get in touch, please fill out the form below. Someone from our team will get back to you shortly
             </p>
+
+            <div className='flex gap-6 items-center'>
+              <a href='https://twitter.com/betshiba_erc20'>
+                <i class="fa fa-twitter fa-2x text-white-100" aria-hidden="true"></i>
+              </a>
+
+              <a href='https://t.me/betshibaportal'>
+                <i class="fa fa-telegram fa-2x text-white-100" aria-hidden="true"></i>
+
+              </a>
+
+              <a href='mailto:betshibateam@gmail.com'>
+                <i class="fa fa-envelope fa-2x text-white-100" aria-hidden="true"></i>
+              </a>
+            </div>
 
           </div>
 

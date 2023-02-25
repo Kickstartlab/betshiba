@@ -13,11 +13,14 @@ import mbl from '../assets/mbl.png';
 import rocket from '../assets/rocket.png';
 import bet from '../assets/bet.png';
 import top from '../assets/top.png';
+import circle from '../assets/circle.png';
+import inner from '../assets/inner.png';
 import banner_2 from '../assets/banner_2.png';
 import banner_1 from '../assets/banner_1.png';
 import Accordion from './Accordion';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import ProgressBar from './ProgressBar';
 
 
 export default function Home() {
@@ -69,7 +72,7 @@ export default function Home() {
                             <h2 className='md:text-7xl text-3xl tracking-wider font-russo font-bold text-white-100'>
                                 BET
                             </h2>
-                            <h2 className='md:text-7xl text-3xl tracking-wide text-outline font-russo font-bold'>
+                            <h2 className='md:text-7xl text-3xl tracking-wide text-outline text-blue-100 font-russo font-bold'>
                                 SHIBA
                             </h2>
                             <h2 className='md:text-5xl text-3xl tracking-wide font-russo font-bold text-white-100 uppercase'>
@@ -390,6 +393,40 @@ export default function Home() {
 
             <div data-aos="flip-up" data-aos-delay="350" className="banner">
                 <img src={banner_2} alt="Logo" className='' />
+            </div>
+
+            {/* tokenomics */}
+
+            <div id='conclusion' className="">
+
+                <div className="lg:py-20 py-8 lg:px-20 px-5 container mx-auto">
+
+                    <div className='lg:w-7/12 text-center flex flex-col mx-auto'>
+
+                        <h3 data-aos="fade-up" data-aos-delay="350" className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
+                            BetSHIBA ROCKET
+                        </h3>
+
+                        <h2 className='text-3xl tracking-wider font-russo text-center font-semibold text-white-100 uppercase'>
+                            TOkenomics
+                        </h2>
+
+                        <h4 className='text-3xl mt-8 tracking-wider font-russo text-center font-semibold text-white-100 uppercase'>
+                            Supply : 1,000,000,000,000 $BSHIBA
+                        </h4>
+
+                        <h4 className='text-3xl mt-8 tracking-wider font-russo text-center font-semibold text-white-100 uppercase'>
+                            TAX WILL BE 5/5
+                        </h4>
+
+                        <div className='mt-16'>
+                            <ProgressBar />
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
             {/* BetSHIBA ROCKET */}

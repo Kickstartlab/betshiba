@@ -1,6 +1,4 @@
 import React from 'react'
-import telegram from '../assets/telegram.png';
-import twitter from '../assets/twitter.png';
 
 
 

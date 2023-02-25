@@ -93,7 +93,7 @@ export default function Home() {
 
                         </div>
 
-                        <div  data-aos="zoom-in" data-aos-delay="350" className="img md:mt-0 mt-12">
+                        <div data-aos="zoom-in" data-aos-delay="350" className="img md:mt-0 mt-12">
                             <img src={top} alt="Logo" className='w-10/12 lg:float-right sm:flex mx-auto' />
                         </div>
                     </div>
@@ -109,11 +109,11 @@ export default function Home() {
                     <div className="lg:flex block justify-between items-center gap-x-12 py-12">
 
 
-                        <div data-aos="zoom-in" data-aos-delay="350" className="img">
-                            <img src={about} alt="Logo" className='w-10/12 lg:float-right sm:flex mx-auto' />
+                        <div data-aos="zoom-in" data-aos-delay="350" className="">
+                            <img src={about} alt="Logo" className='w-10/12 lg:float-right sm:flex mx-auto rotate' />
                         </div>
 
-                        <div  data-aos="fade-left" className="lg:w-1/2 w-full md:mt-0 mt-12">
+                        <div data-aos="fade-left" className="lg:w-1/2 w-full md:mt-0 mt-12">
                             <h3 className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
                                 About us
                             </h3>
@@ -169,11 +169,11 @@ export default function Home() {
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
 
-                    <div data-aos="fade-right" data-aos-delay="350" className='absolute left-5 lg:block hidden'>
+                    <div data-aos="zoom-in" data-aos-delay="350" className='absolute left-5 lg:block hidden'>
                         <img src={coin} alt="Logo" className='w-10/12' />
                     </div>
 
-                    <div  data-aos="zoom-in" data-aos-delay="350" className='lg:w-8/12 text-center flex flex-col mx-auto'>
+                    <div data-aos="zoom-in" data-aos-delay="350" className='lg:w-8/12 text-center flex flex-col mx-auto'>
 
                         <h3 className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
                             BetSHIBA ROCKET
@@ -237,7 +237,7 @@ export default function Home() {
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
 
-                    <div  data-aos="fade-up" data-aos-delay="350" className='lg:w-8/12 text-center flex flex-col mx-auto'>
+                    <div data-aos="fade-up" data-aos-delay="350" className='lg:w-8/12 text-center flex flex-col mx-auto'>
 
                         <h3 className='text-xl tracking-widest font-russo font-semibold text-yellow-100 uppercase mb-6'>
                             BetSHIBA ROCKET
@@ -255,17 +255,17 @@ export default function Home() {
 
                     <div className='grid lg:grid-cols-2 grid-cols-1 grid-rows-2 items-center justify-center gap-6 mt-12 mb-6'>
 
-                        <div  data-aos="flip-left" className='rounded-3xl p-8 bg-white-100 lg:flex items-center gap-4 space-y-5'>
+                        <div data-aos="zoom-in" className='rounded-3xl p-8 bg-white-100 lg:flex items-center gap-4 space-y-5'>
 
-                            <div className='lg:w-1/3'>
+                            <div data-aos="zoom-in" className='lg:w-1/3'>
                                 <img src={play_1} alt="Logo" className='' />
                             </div>
 
                             <div className=' font-montserat lg:w-1/2'>
-                                <h4 className='text-2xl tracking-wide font-extrabold text-yellow-100'>
+                                <h4 data-aos="fade-down" className='text-2xl tracking-wide font-extrabold text-yellow-100'>
                                     Create Your Account
                                 </h4>
-                                <p className='text-sm pt-2 font-medium'>
+                                <p data-aos="fade-up" className='text-sm pt-2 font-medium'>
                                     Get started on the platform by registering. Depending on your chosen plan.
                                     You will also need a login and password for your account, some communication means that can be used in order to validate it, as well as a Shiba Inu wallet.
 
@@ -274,51 +274,51 @@ export default function Home() {
 
                         </div>
 
-                        <div data-aos="flip-right" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
+                        <div data-aos="zoom-in" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
 
-                            <div className='lg:w-1/3'>
+                            <div data-aos="zoom-in" className='lg:w-1/3'>
                                 <img src={play_2} alt="Logo" className='' />
                             </div>
 
-                            <div className=' font-montserat lg:w-1/2'>
-                                <h4 className='text-2xl tracking-wide font-extrabold text-yellow-100'>
+                            <div className='font-montserat lg:w-1/2'>
+                                <h4 data-aos="fade-down" className='text-2xl tracking-wide font-extrabold text-yellow-100'>
                                     Make your wager
                                 </h4>
-                                <p className='text-sm pt-2 font-medium'>
+                                <p data-aos="fade-up" className='text-sm pt-2 font-medium'>
                                     Make your wager and choose whether to play manually or automatically. Manually pick the currency you’d like and when it’s time, cash out whenever you feel comfortable. With manual betting, control is in Your hands!
                                 </p>
                             </div>
 
                         </div>
 
-                        <div  data-aos="flip-left" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
+                        <div data-aos="zoom-in" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
 
-                            <div className='lg:w-1/3'>
+                            <div data-aos="zoom-in" className='lg:w-1/3'>
                                 <img src={play_3} alt="Logo" className='' />
                             </div>
 
                             <div className=' font-montserat lg:w-1/2'>
-                                <h4 className='text-2xl tracking-wide font-extrabold text-yellow-100'>
+                                <h4 data-aos="fade-down" className='text-2xl tracking-wide font-extrabold text-yellow-100'>
                                     AutoBet
                                 </h4>
-                                <p className='text-sm pt-2 font-medium'>
+                                <p data-aos="fade-up" className='text-sm pt-2 font-medium'>
                                     With AutoBet, you can set the amount of shiba Inu to be wagered each time as well as customize the cashout ratio. Easily design your own betting pattern that suits your needs!
                                 </p>
                             </div>
 
                         </div>
 
-                        <div data-aos="flip-right" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
+                        <div data-aos="zoom-in" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5'>
 
-                            <div className='lg:w-1/3'>
+                            <div data-aos="zoom-in" className='lg:w-1/3'>
                                 <img src={play_4} alt="Logo" className='' />
                             </div>
 
-                            <div className=' font-montserat lg:w-1/2'>
-                                <h4 className='text-2xl tracking-wide font-extrabold text-yellow-100'>
+                            <div className='font-montserat lg:w-1/2'>
+                                <h4 data-aos="fade-down" className='text-2xl tracking-wide font-extrabold text-yellow-100'>
                                     Cash-out
                                 </h4>
-                                <p className='text-sm pt-2 font-medium'>
+                                <p data-aos="fade-up" className='text-sm pt-2 font-medium'>
                                     Cash-out by pushing a corresponding game. Your fixed multiplier will influence your bet, to ensure the best possible outcome. When it comes time to withdraw money, cryptocurrency transactions are incredibly swift compared to traditional methods. That’s why we recommend using this method for a quick and secure payout everytime!
                                 </p>
                             </div>
@@ -331,15 +331,15 @@ export default function Home() {
 
                         <div data-aos="zoom-in" data-aos-delay="350" className='rounded-3xl p-8 bg-white-100  lg:flex items-center gap-4 space-y-5 lg:w-1/2'>
 
-                            <div className='lg:w-1/3'>
+                            <div data-aos="zoom-in" className='lg:w-1/3'>
                                 <img src={play_5} alt="Logo" className='' />
                             </div>
 
                             <div className=' font-montserat lg:w-1/2'>
-                                <h4 className='text-2xl tracking-wide font-extrabold text-yellow-100'>
+                                <h4 data-aos="fade-down" className='text-2xl tracking-wide font-extrabold text-yellow-100'>
                                     Kick off
                                 </h4>
-                                <p className='text-sm pt-2 font-medium'>
+                                <p data-aos="fade-up" className='text-sm pt-2 font-medium'>
                                     Kick off a new round by submitting an additional stake and waiting until the countdown for launch starts.
                                 </p>
                             </div>
@@ -361,7 +361,7 @@ export default function Home() {
                     <div className="lg:flex block justify-center items-center gap-x-12 py-12">
 
 
-                        <div data-aos="zoom-in" data-aos-delay="350" className="img">
+                        <div data-aos="fade-up" data-aos-delay="350" className="img">
                             <img src={mbl} alt="Logo" className='w-10/12 lg:float-right sm:flex mx-auto' />
                         </div>
 
@@ -424,7 +424,7 @@ export default function Home() {
 
                 <div className="lg:py-20 py-5 lg:px-20 px-5 container mx-auto">
 
-                    <div data-aos="fade-right" data-aos-delay="350" className='absolute left-0 -mt-24 lg:block hidden'>
+                    <div data-aos="slide-up" data-aos-delay="350" className='absolute left-0 -mt-24 lg:block hidden'>
                         <img src={rocket} alt="Logo" className='w-10/12' />
                     </div>
 
